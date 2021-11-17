@@ -7,6 +7,7 @@ import models.Course;
 
 /*
  * Service gérant les formations 
+ * rend la liste de formations accessible dans tout le réseau
  */
 public class CoursesServices {
 	
@@ -23,7 +24,7 @@ public class CoursesServices {
 		}
 		
 	}
-	
+	// gère le singleton, s'assure de le créé s'il ne l'est pas fait, si déjà instancié, ne rien faire
 	public static CoursesServices getInstance() {
 		if (CoursesServices.instances == null) {
 			CoursesServices.instances = new CoursesServices();
@@ -31,14 +32,18 @@ public class CoursesServices {
 		return instances;
 	}
 	
-	
+	// rend la liste des formations accessibles (getter)
 	public List<Course> getCourses() {
 		return this.courses;
 	}
 	
+	// rend les formations trouvables par leur nom (getter)
 	public Course getCourseByName(String title) {
 		Course courseName = null;
-		for (Course course : courses ) {
+		
+		// boucle pour chaque objet course dans la liste courses
+		// si le titre du course (formation) est le même que celui mit en paramètre, il est renvoyé sinon il reste à null
+		for (Course course : courses ) { 
 			if (course.getTitle().equals(title)) {
 				courseName = course;
 				break;

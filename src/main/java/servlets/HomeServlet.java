@@ -9,24 +9,20 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class HomeServlet
  * Servlet de la page d'accueil
  */
+//TODO rendre accessible ce servlet uniqueemnt quand l'utilisateur est loggé
 @WebServlet("/accueil")
 public class HomeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    /**
-     * Default constructor. 
-     */
+   
     public HomeServlet() {
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+    // envoie la requête vers le jsp de la page d'accueil
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		req.getRequestDispatcher("/WEB-INF/home.jsp").forward(req, resp); // renvoie vers le jsp de la page d'accueil
+		req.getRequestDispatcher("/WEB-INF/home.jsp").forward(req, resp);
 
 	
 	}

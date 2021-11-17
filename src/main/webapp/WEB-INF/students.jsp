@@ -12,11 +12,11 @@
 <body>
 <h1>Liste des étudiants</h1>
 <ul>
-<%-- 	<% for (Student student : (List<Student>) request.getAttribute("courses")) { %>
- --%>	<%-- 	<li>	
-			<a href="/exoServletDeux/formation?title=<%= course.getTitle().toLowerCase() %>"><%= course.getTitle() %></a>
-		</li> --%>
-<%-- 	<% } %> --%>
+	<% for (Student student : (List<Student>) request.getAttribute("students")) { %>
+ 	 	<li>	
+			<a href="/exoServletDeux/etudiant?title=<%= student.getUsername()%>"><%= student.getUsername() %></a>
+		</li> 
+	<% } %> 
 </ul>
 
 </body>

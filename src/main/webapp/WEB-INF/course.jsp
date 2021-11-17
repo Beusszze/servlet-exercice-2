@@ -11,7 +11,8 @@
 <body>
 <% Course course = (Course) request.getAttribute("course"); %>
 	<h1><%=course.getTitle()%></h1>
-		<p><%=course.getProgramm()%></p>
+		<p>Nombre d'étudiants : <%=course.getStudentNbr() %><br>
+		Programme : <%=course.getProgramm()%></p>
 
 </body>
 </html>

@@ -1,8 +1,11 @@
 package models;
 
-import java.util.List;
+// clase Student héritant de User
+// permet l'instanciation des objets étudiants
 
 public class Student extends User{
+	
+	// liste des attributs, tous en accessibilité privé
 	private String username;
 	private String password;
 	private String lastName;
@@ -12,11 +15,12 @@ public class Student extends User{
 	private String course;
 	//TODO remplacer String course par Course course
 	
+	// constructeur de User
 	public Student(String username, String password) {
 		super(username, password);
 	}
 
-
+	// constructeur complet
 	public Student(String username, String password, String lastName, String firstName, int age, double grade, String course) {
 		super(username, password);
 		this.setUsername(username);
@@ -28,7 +32,7 @@ public class Student extends User{
 		this.setCourse(course);
 	}
 
-
+	// getters et setters 
 	public String getUsername() {
 		return username;
 	}

@@ -11,7 +11,7 @@
 		<h1>Bienvenue sur le site de la formation</h1>
 		<ul>
 			<li><a href="/exoServletDeux/formations">Liste des formations</a></li>
-			<li><a href="#">Liste des élèves</a></li>
+			<li><a href="/exoServletDeux/etudiants">Liste des élèves</a></li>
 		
 		</ul>
 		

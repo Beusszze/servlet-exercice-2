@@ -1,12 +1,18 @@
 package models;
 
+// classe modèle Course pour instancier les formations
+
 public class Course {
 	
+	// déclaration des attributs
 	private String title;
 	private String programm;
 	private int studentNbr;
 	
+	// constructeur vide
+	public Course () {}
 	
+	// constructeur complet
 	public Course(String title, String programm, int studentNbr) {
 		super();
 		this.setTitle( title);
@@ -14,7 +20,7 @@ public class Course {
 		this.setStudentNbr(studentNbr);
 	}
 
-
+	// getter et setters
 	public String getTitle() {
 		return title;
 	}
