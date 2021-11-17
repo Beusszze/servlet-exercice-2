@@ -11,7 +11,7 @@
 		<h1 style="text-align : center">Bienvenue sur le site de la formation</h1>
 		<ul style="font-size : 25px">
 			<li><a href="/exoServletDeux/formations">Liste des formations</a></li>
-			<li><a href="/exoServletDeux/etudiants">Liste des élèves</a></li>
+			<li><a href="/exoServletDeux/etudiants">Liste des étudiants</a></li>
 		
 		</ul>
 		

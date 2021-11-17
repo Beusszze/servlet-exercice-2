@@ -10,10 +10,10 @@
 <title>Liste des formations</title>
 </head>
 <body style="font-family : Tahoma; background-color : #F5F5F5" style >
-<h1>Liste des étudiants</h1>
+<h1 style="text-align : center">Nos étudiants</h1>
 <ul>
 	<% for (Student student : (List<Student>) request.getAttribute("students")) { %>
- 	 	<li>	
+ 	 	<li style="font-size : 25px">	
 			<a href="/exoServletDeux/etudiant?title=<%= student.getUsername()%>"><%= student.getUsername() %></a>
 		</li> 
 	<% } %> 
