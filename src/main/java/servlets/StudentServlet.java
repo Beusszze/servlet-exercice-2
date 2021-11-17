@@ -31,7 +31,8 @@ public class StudentServlet extends HttpServlet {
 		
 //		System.out.println(studentsServices);
 //		System.out.println(student);
-		
+		System.out.println(request.getParameter("username"));
+
 		// récupère dans "student" l'étudiant en fonction de son username
 		student = this.studentsServices.getStudentByUsername(request.getParameter("username"));
 		
@@ -45,7 +46,7 @@ public class StudentServlet extends HttpServlet {
 		
 		// s'il est non nul, ajout de l'attribut student dans la requête
 		request.setAttribute("student", student);
-		// envoie de la requête vers student.jsp
+		// envoie 
 		request.getRequestDispatcher("WEB-INF/student.jsp").forward(request, response);
 		
 	}

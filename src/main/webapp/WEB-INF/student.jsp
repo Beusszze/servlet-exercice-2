@@ -8,7 +8,7 @@
 <meta charset="ISO-8859-1">
 <title>Liste des étudiants</title>
 </head>
-<body>
+<body style="font-family : Tahoma; background-color : #F5F5F5" style >
 <% Student student = (Student) request.getAttribute("student"); %>
 	<h1><%=student.getUsername()%></h1>
 		<p> Prénom : <%=student.getFirstName()%> Nom de famille : <%=student.getLastName()%><br>

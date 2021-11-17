@@ -6,10 +6,10 @@
 <meta charset="ISO-8859-1">
 <title>Page d'accueil</title>
 </head>
-<body>
+<body style="font-family : Tahoma; background-color : #F5F5F5" style >
 
-		<h1>Bienvenue sur le site de la formation</h1>
-		<ul>
+		<h1 style="text-align : center">Bienvenue sur le site de la formation</h1>
+		<ul style="font-size : 25px">
 			<li><a href="/exoServletDeux/formations">Liste des formations</a></li>
 			<li><a href="/exoServletDeux/etudiants">Liste des élèves</a></li>
 		

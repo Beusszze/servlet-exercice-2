@@ -25,7 +25,7 @@ public class StudentsServices {
 		for (int i = 1; i <16; i++) {
 			students.add(new Student("Etudiant" + i, "password", "nom de famille" + i,
 					"prénom" + i, 20 + i, i*20/100+10, "formation" + i/15));
-			System.out.println("etudiant "+i+" créé");
+			System.out.println("etudiant "+i+" créé"); // s'assure de la création de chaque étudiant dans la console
 		}
 		
 	
@@ -36,7 +36,7 @@ public class StudentsServices {
 		if (StudentsServices.instances == null) {
 			StudentsServices.instances = new StudentsServices();
 		}
-		System.out.println("singleton créé");
+		System.out.println("singleton initié"); // s'assure de la présence du singleton
 
 		return instances;
 	}
