@@ -31,14 +31,15 @@ public class StudentServlet extends HttpServlet {
 		
 //		System.out.println(studentsServices);
 //		System.out.println(student);
-		System.out.println(request.getParameter("username"));
 
-		// récupère dans "student" l'étudiant en fonction de son username
+		
+		// récupération d'un étudiant grâce à  l'attribut username de ma requête et la méthode getStudentByUsername du service
+		// stockage dans l'instance student
 		student = this.studentsServices.getStudentByUsername(request.getParameter("username"));
 		
-//		System.out.println(student); // affiche dans la console l'instance student
 		
 		// s'il est nul, redirection vers l'accueil
+		//TODO erreur à ce niveau, redirection systématique vers accueil (student est donc nul à chaque fois)
 		if (student == null) {
 			response.sendRedirect("/exoServletDeux/accueil");
 			return;
@@ -46,7 +47,7 @@ public class StudentServlet extends HttpServlet {
 		
 		// s'il est non nul, ajout de l'attribut student dans la requête
 		request.setAttribute("student", student);
-		// envoie 
+		// envoie la requête vers student.jsp
 		request.getRequestDispatcher("WEB-INF/student.jsp").forward(request, response);
 		
 	}

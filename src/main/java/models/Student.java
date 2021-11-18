@@ -102,6 +102,12 @@ public class Student extends User{
 		this.course = course;
 	}
 
+	@Override
+	public String toString() {
+		return "Student [username=" + username + ", password=" + password + ", lastName=" + lastName + ", firstName="
+				+ firstName + ", age=" + age + ", grade=" + grade + ", course=" + course + "]";
+	}
+
 
 
 

@@ -8,7 +8,7 @@
 <meta charset="ISO-8859-1">
 <title>Liste des formations</title>
 </head>
-<body style="font-family : Tahoma; background-color : #F5F5F5" style >
+<body style="font-family : Tahoma; background-color : #F5F5F5">
 <% Course course = (Course) request.getAttribute("course"); %>
 	<h1 style="text-align : center"><%=course.getTitle()%></h1>
 		<p style="font-size : 25px"><b>Nombre d'étudiants</b> : <%=course.getStudentNbr() %><br>

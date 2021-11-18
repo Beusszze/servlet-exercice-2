@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Page de connexion</title>
 </head>
-<body style="font-family : Tahoma; background-color : #F5F5F5" style >
+<body style="font-family : Tahoma; background-color : #F5F5F5">
 
 <h1 style="text-align : center"> Bienvenue sur la page de connexion</h1>
 <h3 style="font-size: 20px "> Renseignez vos identifiants personnels</h3>

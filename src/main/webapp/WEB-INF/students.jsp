@@ -9,7 +9,7 @@
 <meta charset="ISO-8859-1">
 <title>Liste des formations</title>
 </head>
-<body style="font-family : Tahoma; background-color : #F5F5F5" style >
+<body style="font-family : Tahoma; background-color : #F5F5F5">
 <h1 style="text-align : center">Nos étudiants</h1>
 <ul>
 	<% for (Student student : (List<Student>) request.getAttribute("students")) { %>
