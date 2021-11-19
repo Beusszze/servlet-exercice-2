@@ -14,7 +14,7 @@
 <ul>
 	<% for (Student student : (List<Student>) request.getAttribute("students")) { %>
  	 	<li style="font-size : 25px">	
-			<a href="/exoServletDeux/etudiant?title=<%= student.getUsername()%>"><%= student.getUsername() %></a>
+			<a href="/exoServletDeux/etudiant?username=<%= student.getUsername()%>"><%= student.getUsername() %></a>
 		</li> 
 	<% } %> 
 </ul>
